@@ -1,0 +1,80 @@
+body {
+    background-color: #272727; /* Gris oscuro suave */
+}
+
+#tituloPrincipal {
+    text-align: center;
+    color: white;
+}
+
+#enterSubmit {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.minimalism-button {
+    background-color: #ADD8E6; /* Fondo azul claro */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Esquinas redondeadas para un diseño ovalado */
+    padding: 10px 30px; /* Relleno para crear un área clicable adecuada */
+    font-size: 16px; /* Tamaño de fuente cómodo */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    display: inline-block; /* Asegura que el botón se comporte como un elemento en línea */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.minimalism-button:hover {
+    background-color: #87CEEB; /* Azul ligeramente más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+.minimalism-button:active {
+    background-color: #6495ED; /* Azul más oscuro al hacer clic */
+    transform: scale(1); /* Volver al tamaño original */
+}
+
+.minimalism-button:focus {
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+    box-shadow: 0 0 0 2px #87CEEB; /* Sombra ligera para indicar enfoque */
+}
+
+#formularioInicioSesion {
+    align-items: center;
+    align-content: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5%;
+}

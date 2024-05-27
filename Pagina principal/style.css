@@ -1,0 +1,191 @@
+body {
+    background-color: #272727; /* Gris oscuro suave */
+}
+
+#tituloPrincipal {
+    text-align: center;
+    color: white;
+}
+
+.temperatureAreaPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#enterSubmit {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.temperatureArea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+.temperatureArea > div {
+    width: 150px; /* Aumenta el ancho */
+    height: 350px; /* Aumenta la altura */
+    background-color: #333333;
+    margin: 10px; /* Espacio alrededor de cada rectángulo */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.tab-temp-max,
+.tab-temp-min {
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.minimalism-button {
+    background-color: #ADD8E6; /* Fondo azul claro */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Esquinas redondeadas para un diseño ovalado */
+    padding: 10px 30px; /* Relleno para crear un área clicable adecuada */
+    font-size: 16px; /* Tamaño de fuente cómodo */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    display: inline-block; /* Asegura que el botón se comporte como un elemento en línea */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.minimalism-button:hover {
+    background-color: #87CEEB; /* Azul ligeramente más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escalado al pasar el ratón */
+}
+
+.minimalism-button:active {
+    background-color: #6495ED; /* Azul más oscuro al hacer clic */
+    transform: scale(1); /* Volver al tamaño original */
+}
+
+.minimalism-button:focus {
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+    box-shadow: 0 0 0 2px #87CEEB; /* Sombra ligera para indicar enfoque */
+}
+
+.windDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wind-img {
+    width: 50px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+.wind-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.windDayMax, .windDayMin {
+    margin: 0;
+    font-size: 1em;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
